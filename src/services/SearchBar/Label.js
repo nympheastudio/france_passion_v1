@@ -10,9 +10,11 @@ export const getLocationLabel = (item) => {
     lowlight: '',
   };
 
-
+  if (item.name) {
+    locationLabel.highlight += `${item.name}`;
+    }
   if (item.locality) {
-  locationLabel.highlight += `${item.locality}`;
+  locationLabel.lowlight += `${item.locality} `;
   }
   if (item.postal_code) {
     locationLabel.lowlight += `${item.postal_code}, `;

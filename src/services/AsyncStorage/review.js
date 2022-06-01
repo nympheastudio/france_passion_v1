@@ -5,6 +5,7 @@ import Moment from 'moment';
 
 // Fonction stockant les avis (user et public) dans un fichier FileSystem
 // et générant et stockant dans l'AsyncStorage la date d'expiration de ce fichier
+
 export const storeReviewsData = async (reviews) => {
   // Création et stockage de la date d'expiration à 1 semaine ultérieure
   const reviewExpirationDate = Moment(new Date()).add(1, 'w').format('YYYY-MM-DD');
@@ -43,9 +44,9 @@ export const getReviewsDataStored = async () => {
       avis_adherent: JSON.parse(userReviews),
       avis_public: JSON.parse(publicReviews),
     };
-    if (!allReviews.publicReviews || allReviews.publicReviews.length === 0) {
+   /* if (!allReviews.publicReviews || allReviews.publicReviews.length === 0) {
       return null;
-    }
+    }*/
 
     return allReviews;
   } catch (error) {

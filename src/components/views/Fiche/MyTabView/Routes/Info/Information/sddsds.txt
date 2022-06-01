@@ -1,0 +1,42 @@
+<View >
+		
+
+  
+  
+          {name === global.i18n.t('TITRE_FICHE_COORDONNEES_GPS') && (
+            <>
+              <TextCustom selectable style={{ ...infos.infoItemBasicContent, marginBottom: 0 }}>
+                {global.i18n.t('TEXTE_FICHE_LATITUDE')} : {item.latitude}
+              </TextCustom>
+              <TextCustom selectable style={infos.infoItemBasicContent}>
+                {global.i18n.t('TEXTE_FICHE_LONGITUDE')} : {item.longitude}
+              </TextCustom>
+            </>
+          )}
+
+          {name === global.i18n.t('TITRE_FICHE_LANGUES') && (
+            <TextCustom style={{ ...infos.infoItemBasicContent, textTransform: 'uppercase' }}>
+              {item.map((lang) => lang)}
+            </TextCustom>
+          )}
+
+          {name === global.i18n.t('TITRE_FICHE_INFORMATIONS') && (
+            <TextCustom style={{ ...infos.infoItemBasicContent, color: '#ED125F' }}>{item}</TextCustom>
+			 
+			
+          )}
+		  
+		
+			 
+			
+         
+
+          {!specificItem.includes(name) && (
+            <TextCustom style={infos.infoItemBasicContent}>{item}</TextCustom>
+          )}
+		  
+		  
+ 
+		   
+		   
+        </View>

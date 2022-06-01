@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 HelveticaNeue-Bold;\f4\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh13220\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Build Test\
+\
+1. Placer le fichier Certificates.p12 \'e0 la base de app/ ainsi que le fichier de profile ProvisioningProfileFR.mobileprovision\
+\
+2. Changer le bundleIdentifier par celui appartenant \'e0 France Passion dans le app.config.json :\
+
+\f1\b bundleIdentifier: \'91com.francepassion.com\'92
+\f0\b0 \
+\
+3. Dans le Terminal, se placer dans app/\
+\
+4. Lancer un build : 
+\f1\b yarn start
+\f0\b0 \
+\
+5. Dans une nouvelle fen\'eatre du Terminal, entrer la commande pour Build l\'92app iOS :\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab560\pardirnatural\partightenfactor0
+
+\f2\b\fs22 \cf2 \CocoaLigature0 EXPO_IOS_DIST_P12_PASSWORD=6tematik 
+\f3\fs24 \cf0 \CocoaLigature1 expo build:ios --team-id 59F2AYQR6R --dist-p12-path Certificates.p12 --provisioning-profile-path ProvisioningProfileFP.mobileprovision
+\f1 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f4\b0 \cf0 (L\'92argument \'97team-id correspond au Team ID du compte dev Apple de France Passion)\
+(L\'92argument \'97dist-p12-path va forcer le build \'e0 prendre ten compte le profile FP)\
+(L\'92argument \'97provisioning-profile-path va forcer le Build \'e0 prendre en compte le profile g\'e9n\'e9r\'e9 sur developer.apple.com)\
+\
+6. S\'e9lectionner le build Archive.\
+\
+7. Suivez les instructions jusqu\'92au lancement du Build Expo.\
+\
+8. Rendez vous sur l\'92url fourni pour checker l\'92avancement du Build iOS.\
+\
+9. Une fois le Build termin\'e9, vous pourrez t\'e9l\'e9charger celui-ci (il s\'92agit d\'92un fichier .ipa)\
+\
+10. Afin de mettre l\'92application en ligne sur l\'92AppStore, passer par Transporter pour que le Build apparaisse sous l\'92app en question afin d\'92\'eatre s\'e9lectionn\'e9 comme Build principal de l\'92app.}

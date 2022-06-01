@@ -1,0 +1,20 @@
+// Constantes définissant le nom de chaque route/vue de l'app
+export const PAGE_PREHOME = 'PAGE_PREHOME';
+export const PAGE_CONNEXION = 'PAGE_CONNEXION';
+export const PAGE_CHARGEMENT = 'PAGE_CHARGEMENT';
+export const PAGE_ETAPE = 'PAGE_ETAPE';
+export const PAGE_FAVORIS = 'PAGE_FAVORIS';
+export const PAGE_COMPTE = 'PAGE_COMPTE';
+export const PAGE_AVIS = 'PAGE_AVIS';
+export const PAGE_PLUS = 'PAGE_PLUS';
+export const PAGE_LISTE = 'PAGE_LISTE';
+export const PAGE_FICHE = 'PAGE_FICHE';
+export const PAGE_REGLES_OR = 'PAGE_REGLES_OR';
+export const PAGE_CONTACT = 'PAGE_CONTACT';
+export const PAGE_CONTACT_VALIDATION = 'PAGE_CONTACT_VALIDATION';
+export const PAGE_MENTIONS_LEGALES = 'PAGE_MENTIONS_LEGALES';
+export const PAGE_CONFIDENTIALITE = 'PAGE_CONFIDENTIALITE';
+export const PAGE_LEGENDES = 'PAGE_LEGENDES';
+export const PAGE_AVIS_DEPOSER = 'PAGE_AVIS_DEPOSER';
+export const PAGE_AVIS_VALIDATION = 'PAGE_AVIS_VALIDATION';
+export const PAGE_RDV_FESTIFS = 'PAGE_RDV_FESTIFS';

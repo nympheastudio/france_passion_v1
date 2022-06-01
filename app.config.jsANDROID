@@ -1,0 +1,51 @@
+export const API_KEY = '#.t_h-TG;]mv8eq+8&Pr8Z6(nwXf-{2X';
+
+export default ({ config }) => ({
+
+  ...config,
+
+  ios: {
+
+    ...config.ios,
+
+    bundleIdentifier: 'com.france-passion.app',
+
+    buildNumber: '0.0.2',
+
+    supportsTablet: true,
+
+    infoPlist: {
+
+      UIBackgroundModes: [
+
+        'location',
+
+        'fetch',
+
+      ],
+
+    },
+
+  },
+
+  android: {
+
+    ...config.android,
+
+    package: 'com.france_passion.app',
+
+    versionCode: 4,
+
+    config: {
+
+      googleMaps: {
+
+        apiKey: 'AIzaSyDWbgTn62rve1M9HPmNnWq7IZ-1PyuCHIY',
+
+      },
+
+    },
+
+  },
+
+});

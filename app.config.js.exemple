@@ -1,0 +1,26 @@
+export const API_KEY = 'public api key';
+
+export default ({ config }) => ({
+  ...config,
+  ios: {
+    bundleIdentifier: 'com.yourcompany.yourappname',
+    buildNumber: '0.0.1',
+    supportsTablet: true,
+    infoPlist: {
+      UIBackgroundModes: [
+        'location',
+        'fetch',
+      ],
+    },
+  },
+  android: {
+    package: 'com.yourcompany.yourappname',
+    versionCode: 1,
+    config: {
+      googleMaps: {
+        apiKey: 'your api key',
+      },
+    },
+  },
+
+});

@@ -1,0 +1,22 @@
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
+
+# macOS
+.DS_Store
+
+# on travaille avec yarn
+package-lock.json
+
+config.js
+app.config.js
+google-services.json
+*.pem

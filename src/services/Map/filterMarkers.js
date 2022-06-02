@@ -145,7 +145,7 @@ const filterByKeyword = (markers,keyword) => {
 
 	let objIndex = keyword.findIndex((obj => obj.name == 'BT_FILTRES_KEYWORD'));
 
-	let keyword_current = keyword[objIndex].value;
+	let keyword_current = keyword[objIndex].value.toLowerCase();
 	
 	//console.log( 'checked : ' + keyword[objIndex].checked );
 
@@ -157,13 +157,13 @@ const filterByKeyword = (markers,keyword) => {
 			
 			//if(JSON.stringify(marker.nom_propriete).includes(keyword_current))console.log(JSON.stringify(marker));
 
-			if(JSON.stringify(marker.nom_propriete).includes(keyword_current)) return true;
-			if(JSON.stringify(marker.nom            ).includes(keyword_current)) return true;
-			if(JSON.stringify(marker.aire_accueil   ).includes(keyword_current)) return true;
-			if(JSON.stringify(marker.indication_fr  ).includes(keyword_current)) return true;
-			if(JSON.stringify(marker.ville          ).includes(keyword_current)) return true;
-			if(JSON.stringify(marker.produits_fiche).includes(keyword_current)) return true;
-			if(JSON.stringify(marker.produits_apercu).includes(keyword_current)) return true;
+			if(JSON.stringify(marker.nom_propriete).toLowerCase().includes(keyword_current)) return true;
+			if(JSON.stringify(marker.nom            ).toLowerCase().includes(keyword_current)) return true;
+			if(JSON.stringify(marker.aire_accueil   ).toLowerCase().includes(keyword_current)) return true;
+			if(JSON.stringify(marker.indication_fr  ).toLowerCase().includes(keyword_current)) return true;
+			if(JSON.stringify(marker.ville          ).toLowerCase().includes(keyword_current)) return true;
+			if(JSON.stringify(marker.produits_fiche).toLowerCase().includes(keyword_current)) return true;
+			if(JSON.stringify(marker.produits_apercu).toLowerCase().includes(keyword_current)) return true;
 
 			return false;
 		 });

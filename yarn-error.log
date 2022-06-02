@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarnpkg add react-native@0.68.2
+  /usr/local/bin/node /usr/local/bin/yarnpkg add expo-web-browser@~10.2.1 react-native-maps@0.30.2
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, mkdir '/Users/nicolas/Documents/app_ios/france_passion/node_modules/@babel/helper-create-class-features-plugin/node_modules/@babel/helper-member-expression-to-functions'
+  Error: EACCES: permission denied, unlink '/Users/nicolas/Documents/app_ios/france_passion/node_modules/@babel/helper-create-class-features-plugin/node_modules/@babel/helper-member-expression-to-functions/package.json'
 
 npm manifest: 
   {
@@ -58,7 +58,7 @@ npm manifest:
       "prop-types": "^15.7.2",
       "react": "17.0.2",
       "react-dom": "17.0.2",
-      "react-native": "https://github.com/expo/react-native/archive/sdk-45.0.0.tar.gz",
+      "react-native": "0.68.2",
       "react-native-elements": "^2.0.2",
       "react-native-gesture-handler": "~2.2.1",
       "react-native-keyboard-aware-scroll-view": "^0.9.1",
@@ -7744,10 +7744,10 @@ Lockfile:
     dependencies:
       prop-types "^15.7.2"
   
-  react-native-codegen@^0.0.13:
-    version "0.0.13"
-    resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.0.13.tgz#4cc94546fc75a5dbe9350d59c10108f2efe6bc17"
-    integrity sha512-rCh1P+s0Q4N6vNgS97ckafbhJRztz22+0l0VZoyQC06F07J98kI5cUByH0ATypPRIdpkMbAZc59DoPdDFc01bg==
+  react-native-codegen@^0.0.17:
+    version "0.0.17"
+    resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.0.17.tgz#83fb814d94061cbd46667f510d2ddba35ffb50ac"
+    integrity sha512-7GIEUmAemH9uWwB6iYXNNsPoPgH06pxzGRmdBzK98TgFBdYJZ7CBuZFPMe4jmHQTPOkQazKZ/w5O6/71JBixmw==
     dependencies:
       "@babel/parser" "^7.14.0"
       flow-parser "^0.121.0"
@@ -7937,9 +7937,10 @@ Lockfile:
       escape-string-regexp "2.0.0"
       invariant "2.2.4"
   
-  "react-native@https://github.com/expo/react-native/archive/sdk-45.0.0.tar.gz":
-    version "0.68.1"
-    resolved "https://github.com/expo/react-native/archive/sdk-45.0.0.tar.gz#5e0a8f7e59380060a57d081f9812c250802ab078"
+  react-native@0.68.2:
+    version "0.68.2"
+    resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.68.2.tgz#07547cd31bb9335a7fa4135cfbdc24e067142585"
+    integrity sha512-qNMz+mdIirCEmlrhapAtAG+SWVx6MAiSfCbFNhfHqiqu1xw1OKXdzIrjaBEPihRC2pcORCoCHduHGQe/Pz9Yuw==
     dependencies:
       "@jest/create-cache-key-function" "^27.0.1"
       "@react-native-community/cli" "^7.0.3"
@@ -7963,7 +7964,7 @@ Lockfile:
       pretty-format "^26.5.2"
       promise "^8.0.3"
       react-devtools-core "^4.23.0"
-      react-native-codegen "^0.0.13"
+      react-native-codegen "^0.0.17"
       react-native-gradle-plugin "^0.0.6"
       react-refresh "^0.4.0"
       react-shallow-renderer "16.14.1"

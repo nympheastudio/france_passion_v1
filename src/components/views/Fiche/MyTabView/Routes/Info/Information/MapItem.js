@@ -56,7 +56,10 @@ const MapItem = ({ marker }) => {
           }}
         >
           <Marker coordinate={{ latitude: marker.latitude, longitude: marker.longitude }}>
-            <Image source={inactiveMarker} />
+            <Image source={inactiveMarker} style={{width: 50,
+    height: 200,
+    resizeMode: 'stretch',
+ }} />
           </Marker>
         </MapView>
         <TouchableOpacity style={infos.mapItemGotoBtn} onPress={handleItineraryPress}>

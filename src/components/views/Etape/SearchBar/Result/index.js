@@ -48,26 +48,21 @@ const labelledLocation = `${getLocationLabel(item)}`;
 
   const renderResults = () => {
     const resultsList = [];
-   // alert('test');
-   //console.log('testresults :');
-  //console.log(results.data[0].administrative_area);
- 
- //administrative_area
- // console.log(results);
+   
    // results.hits.map((result) => {
    results.data.map((result,index) => {
 
     //console.log('reduce results map -> result :' + JSON.stringify(result));
     let r = Math.round(Math.random() * 10) * index;
-    console.log(r);
+   // console.log(r);
 
       resultsList.push(
         <ResultItem result={result} key={r} selectLocation={selectLocation} />,
       );
       return null;
     });
-    console.log('test resultsList :');
-    console.log(resultsList);
+    //console.log('test resultsList :');
+    //console.log(resultsList);
     var uniq = {};
     //const ids = resultsList.map(o => o.id)
     const filtered = resultsList.filter(obj => !uniq[obj.key] && (uniq[obj.key] = true));

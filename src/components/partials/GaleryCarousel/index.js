@@ -1,6 +1,7 @@
 // == Import npm
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+//import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import {
   View,
   TouchableOpacity,

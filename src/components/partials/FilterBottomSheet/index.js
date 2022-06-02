@@ -23,6 +23,11 @@ import Keyword from './Keyword';
 import Categories from './Categories';
 import Criteria from './Criteria';
 import Languages from './Languages';
+import { useNavigation } from '@react-navigation/native';
+
+// Import routes
+import { PAGE_LISTE } from '@components/navigations/routes';
+
 
 
 // == Component
@@ -34,7 +39,15 @@ const FilterBottomSheet = ({
   toggleLanguageFilter,
   resetFilters,
   RBSheetRef,
-}) => (
+}) => 
+
+
+  {
+    const navigation = useNavigation();
+  
+    return (
+
+
   <RBSheet
     ref={RBSheetRef}
     closeOnDragDown={false}
@@ -71,12 +84,25 @@ const FilterBottomSheet = ({
       <TouchableOpacity onPress={resetFilters} style={filter.bottomBtn1}>
         <TextCustom style={filter.bottomBtnText1}>{global.i18n.t('BT_FILTRES_REINITIALISER')}</TextCustom>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => {RBSheetRef.current.close();Keyboard.dismiss();}} style={filter.bottomBtn2}>
+      <TouchableOpacity onPress={() => {
+       // navigation.navigate(PAGE_LISTE);
+        RBSheetRef.current.close();
+        
+        Keyboard.dismiss();
+
+       setTimeout(() => {
+         navigation.navigate(PAGE_LISTE);
+
+       }, 500);
+
+        }} style={filter.bottomBtn2}>
         <TextCustom style={filter.bottomBtnText2}>{global.i18n.t('BT_FILTRES_ACTUALISER')}</TextCustom>
       </TouchableOpacity>
     </View>
   </RBSheet>
 );
+
+      }
 
 // == Validation
 FilterBottomSheet.propTypes = {

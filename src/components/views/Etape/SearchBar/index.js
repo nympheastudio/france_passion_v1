@@ -44,21 +44,19 @@ const SearchBar = ({
 */
 
     let positionstackKey = '0de0fc85062fb81a1cccbcee1cbaa384';
+    let linkPositionStack = 'http://api.positionstack.com/v1/forward?access_key='+ positionstackKey 
+    + '&query=' + queryToSearch 
+    + '&country=FR';
 
     
-    //For address input use forwardPGet
-    const link = 'http://api.positionstack.com/v1/forward?access_key=0de0fc85062fb81a1cccbcee1cbaa384&query='
-    +queryToSearch + '&country=FR';
-    //this.forwardGeo + this.positionstackKey + this.query + '7509 S 2840 W, West Jordan, UT';
- //console.log(link);
-    let search = await fetch(link)
+    let search = await fetch(linkPositionStack)
     
     .then(response => response.json())
     .then(forwardResponse => 
       {
       saveResults(forwardResponse);
      // resetSearchBar();
-      console.log(forwardResponse);
+     // console.log(forwardResponse);
       })
 
     .catch((error) => {

@@ -41,6 +41,13 @@ const MapButtons = ({ RBSheetRef, currentMarkers, filters }) => {
       {currentMarkers.length > 0 && (
         <TouchableOpacity style={etape.listBtn} onPress={() => navigation.navigate(PAGE_LISTE)}>
           <Image style={etape.btnImage} source={iconList} />
+          {currentMarkers.length > 0 && (
+            <View style={etape.filtersNumberContainer}>
+              <TextCustom style={etape.filtersNumberText}>
+                {currentMarkers.length}
+              </TextCustom>
+            </View>
+          )}
         </TouchableOpacity>
       )}
     </>

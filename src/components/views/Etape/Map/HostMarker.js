@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Marker } from 'react-native-maps';
-import { Alert } from 'react-native';
+import { Alert,Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import {useNavigationState} from '@react-navigation/native';
 
@@ -74,12 +74,17 @@ console.log(state.routes[state.index]);
         latitude: parseFloat(marker.latitude),
         longitude: parseFloat(marker.longitude),
       }}
-      image={(markerSelected && markerSelected.id === marker.id) ? activeMarker : inactiveMarker}
+    //  image={(markerSelected && markerSelected.id === marker.id) ? activeMarker : inactiveMarker}
 	  opacity={opacityVal}
       tracksViewChanges={false}
       onPress={handlePress}
       stopPropagation
-    />
+    ><Image source={(markerSelected && markerSelected.id === marker.id) ? activeMarker : inactiveMarker}
+    
+    style={{width: 32, height: 32}}
+    resizeMode="contain"
+     />
+     </Marker>
   );
 };
 

@@ -63,6 +63,9 @@ const authMiddleware = (store) => (next) => (action) => {
         getAppLanguage(adherent.langue)
           .then((data) => {
             store.dispatch(saveLanguage(data));
+            
+           // store.dispatch(connectUser(token, adherent, expirationDate));
+          }).then(() => {
             store.dispatch(connectUser(token, adherent, expirationDate));
           }).catch(() => {
             store.dispatch(connectUser(token, adherent, expirationDate));

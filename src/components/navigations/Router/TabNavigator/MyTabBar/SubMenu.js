@@ -197,7 +197,7 @@ text: 'OK',
          //  });
         }}
       />
-
+{/*}
 <Divider style={tabNavigator.subMenuDivider} />
       <SubMenuItem
         title={infodev}
@@ -206,7 +206,7 @@ text: 'OK',
           showConfigAlert();
         }}
       />
-
+*/}
 
 
     </Animated.View>

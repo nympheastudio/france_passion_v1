@@ -2,7 +2,7 @@
 // == Import npm
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image } from 'react-native';
+import { Image,Pressable } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 // Import components
@@ -13,10 +13,10 @@ import { tabNavigator } from '@styles/Themes';
 
 // == Composant
 const SubMenuItem = ({ title, image, navigationTo }) => (
-  <TouchableOpacity style={tabNavigator.subMenuItemContainer} onPress={navigationTo}>
+  <Pressable style={tabNavigator.subMenuItemContainer} onPress={navigationTo}>
     <Image source={image} style={tabNavigator.subMenuItemIcon} />
     <TextCustom fontType="medium" style={tabNavigator.subMenuItemText}>{title}</TextCustom>
-  </TouchableOpacity>
+  </Pressable>
 );
 
 SubMenuItem.propTypes = {

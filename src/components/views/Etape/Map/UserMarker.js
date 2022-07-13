@@ -1,7 +1,7 @@
 // Import node modules
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Platform } from 'react-native';
+import { Platform, Image } from 'react-native';
 import { Marker } from 'react-native-maps';
 
 // Import services
@@ -42,13 +42,24 @@ const UserMarker = ({ userLocation, saveUserLocation, setLocation }) => {
   if (userLocation.latitude && userLocation.longitude) {
     return (
       <Marker
-        style={{ zIndex: 10 }}
+        style={{ zIndex: 10 ,
+       
+      }}
+        resizeMode="center" 
+        resizeMethod="resize"
         cluster={false}
         coordinate={userLocation}
-        image={Platform.OS === 'ios' ? iconCaravaneiOS : iconCaravane}
+      // image={Platform.OS === 'ios' ? iconCaravaneiOS : iconCaravane}
         tracksViewChanges
         stopPropagation
-      />
+      >
+      <Image
+
+      source={Platform.OS === 'ios' ? iconCaravaneiOS : iconCaravane}
+      style={{width: 32, height: 32}}
+      resizeMode="contain"
+       />
+      </Marker>
     );
   }
   return (null);

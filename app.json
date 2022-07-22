@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "France Passion / API v1 ",
+    "name": "France Passion",
     "slug": "france-passion-api-v1-positionstack",
     "description": "France passion app connectee à l'API PHP sur les serveurs digito\nSUPP ALGOLIA  et Remplacement PositionStack et correction taille icone IOS",
     "backgroundColor": "#144C95",
@@ -10,7 +10,7 @@
       "android",
       "web"
     ],
-    "version": "1.3",
+    "version": "1.9",
     "orientation": "default",
     "icon": "./src/styles/images/icon.png",
     "splash": {

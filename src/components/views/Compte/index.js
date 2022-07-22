@@ -18,7 +18,7 @@ import myFakeReviews from './data';
 // == Composant
 const Compte = ({ user, reviews, logout }) => (
   <View style={compte.compteMainContainer}>
-    <TopContent user={user} />
+    <TopContent user={user} logout={logout}  />
     <BottomContent logout={logout} reviews={reviews} />
     {/* <BottomContent logout={logout} reviews={reviews.length === 0 ? myFakeReviews : reviews} /> */}
   </View>

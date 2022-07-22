@@ -89,7 +89,6 @@ style={contact.inputMessage}
 
 placeholderTextColor="#aaa"
 
-		style={{height: 40}}
 		onChangeText={inputOnChangeText}
 
 		onEndEditing={() => handlePress(i)}

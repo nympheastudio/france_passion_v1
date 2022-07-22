@@ -25,7 +25,7 @@ import TextCustom from '@components/partials/TextCustom';
 import LanguageModal from '@containers/partials/LanguageModal';
 
 // == Composant
-const BottomContent = ({ reviews, logout }) => {
+const BottomContent = ({ reviews, logout , user }) => {
   const navigation = useNavigation();
   const [isVisible, setVisibility] = useState(false);
 
@@ -61,6 +61,8 @@ const BottomContent = ({ reviews, logout }) => {
           </TextCustom>
         </TouchableOpacity>
       </View>
+     
+    
       <Divider style={compte.compteBotDivider} />
       <View style={compte.compteBotContainer}>
         <Image source={powerIcon} style={compte.compteBotImage} />

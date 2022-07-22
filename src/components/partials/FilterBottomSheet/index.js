@@ -71,7 +71,7 @@ const FilterBottomSheet = ({
     {/* Filtres */}
     <ScrollView showsVerticalScrollIndicator={false} style={filter.scrollViewContainer} >
 
-     <Keyword keyword={filters.keyword}  toggleFilter={toggleKeywordFilter} />
+      {/*<Keyword keyword={filters.keyword}  toggleFilter={toggleKeywordFilter} />*/}
       <Categories categories={filters.categories}  toggleFilter={toggleCategoryFilter} />
       <Criteria criteria={filters.criteria} toggleFilter={toggleCriteriaFilter} />
 
@@ -90,10 +90,10 @@ const FilterBottomSheet = ({
         
         Keyboard.dismiss();
 
-       setTimeout(() => {
+       /*setTimeout(() => {
          navigation.navigate(PAGE_LISTE);
 
-       }, 500);
+       }, 500);*/
 
         }} style={filter.bottomBtn2}>
         <TextCustom style={filter.bottomBtnText2}>{global.i18n.t('BT_FILTRES_ACTUALISER')}</TextCustom>

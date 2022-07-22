@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarnpkg add expo-web-browser@~10.2.1 react-native-maps@0.30.2
+  /usr/local/bin/node /usr/local/bin/yarnpkg add expo-notifications@~0.15.4 expo-updates@~0.13.3 react-native-gesture-handler@~2.2.1
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+  /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 
 Yarn version: 
   1.22.18
@@ -50,7 +50,7 @@ npm manifest:
       "expo-permissions": "~13.2.0",
       "expo-screen-orientation": "~4.2.0",
       "expo-updates": "~0.13.1",
-      "expo-web-browser": "~10.2.0",
+      "expo-web-browser": "~10.2.1",
       "geolib": "^3.3.1",
       "i18n-js": "^3.7.1",
       "jwt-decode": "^2.2.0",
@@ -60,11 +60,11 @@ npm manifest:
       "react-dom": "17.0.2",
       "react-native": "0.68.2",
       "react-native-elements": "^2.0.2",
-      "react-native-gesture-handler": "~2.2.1",
+      "react-native-gesture-handler": "^2.2.1",
       "react-native-keyboard-aware-scroll-view": "^0.9.1",
       "react-native-lightbox": "^0.8.1",
       "react-native-map-link": "^2.7.10",
-      "react-native-maps": "0.30.1",
+      "react-native-maps": "0.30.2",
       "react-native-maps-super-cluster": "https://github.com/novalabio/react-native-maps-super-cluster#release/v1.7.0",
       "react-native-modal": "^11.5.6",
       "react-native-paper": "^3.10.1",
@@ -4662,10 +4662,10 @@ Lockfile:
       resolve-from "^5.0.0"
       uuid "^3.4.0"
   
-  expo-web-browser@~10.2.0:
-    version "10.2.0"
-    resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-10.2.0.tgz#e37450e5a0dd2eb1cf5ea5511589ed207da8aafe"
-    integrity sha512-Y8LCiktTUdPQVgO5BR6uHFU8FGu/8ysT2ynpO0WFeD4odX8JBX5JwQ9HokEa3XvRJNpefgQmXETDjzkMznXMvQ==
+  expo-web-browser@~10.2.1:
+    version "10.2.1"
+    resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-10.2.1.tgz#4bd9214f7aefcd1af6ea26ae068a0e3e25a1e0bd"
+    integrity sha512-om34EL7OX5ouBM/hq2PrjHDLKmjVhAy+1H7YqRY6nS8dWsewnLFdLq4d8GPwWQBYb6kHKYVzwFRj+WLTfpAOBQ==
     dependencies:
       compare-urls "^2.0.0"
   
@@ -7769,10 +7769,10 @@ Lockfile:
       react-native-ratings "^7.2.0"
       react-native-status-bar-height "^2.2.0"
   
-  react-native-gesture-handler@~2.2.1:
-    version "2.2.1"
-    resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.2.1.tgz#672258aa5a40c92a97c736bdde0a8bd6c8c6c692"
-    integrity sha512-P4kAPbSY8VFAjvFNzfePgFsbZEldfEnEfNqOJw6MlpcdXrPGwRbvMqWMVkA9lifdKTZ3XifvAgJ8+R+uEZN0zA==
+  react-native-gesture-handler@^2.2.1:
+    version "2.5.0"
+    resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.5.0.tgz#61385583570ed0a45a9ed142425e35f8fe8274fb"
+    integrity sha512-djZdcprFf08PZC332D+AeG5wcGeAPhzfCJtB3otUgOgTlvjVXmg/SLFdPJSpzLBqkRAmrC77tM79QgKbuLxkfw==
     dependencies:
       "@egjs/hammerjs" "^2.0.17"
       hoist-non-react-statics "^3.3.0"
@@ -7820,12 +7820,13 @@ Lockfile:
       "@mapbox/geo-viewport" "^0.4.0"
       supercluster "^6.0.2"
   
-  react-native-maps@0.30.1:
-    version "0.30.1"
-    resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.30.1.tgz#b227f3cbf68947bbd22fcf2b7470a7ab3a4f3fbb"
-    integrity sha512-VDgGygFcXwKLFNmdGb5DVy3DJhjP3qCe3txzDfeO6kQyNELj875ZbZMTYW84XsLUBFNpAWXKffWvMKHMQKv2Gg==
+  react-native-maps@0.30.2:
+    version "0.30.2"
+    resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.30.2.tgz#2f1cf4ab79892a43060774bda8786ce6ab8e3616"
+    integrity sha512-WVv5e7aWdnNJugqNSG/87U+12Pg4RFWU7x/UigTPG1FEUZx2TbYKChL6xZCMGPOv5m5b4Z7bMeKJnZosg+yPyQ==
     dependencies:
       "@types/geojson" "^7946.0.7"
+      deprecated-react-native-prop-types "^2.3.0"
   
   react-native-modal@^10.0.0:
     version "10.0.0"
